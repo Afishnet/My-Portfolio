@@ -22,6 +22,14 @@
     padding: 0;
   }
 }
+@keyframes move-background {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(1000px, 0px, 0px);
+  }
+}
 :root {
   --primary-color: #dce9c0;
   --secondary-color: #274a68;
@@ -34,7 +42,7 @@
 
 body {
   font-family: var(--secondary-font);
-  height: 8000px;
+  height: auto;
   background-color: rgb(102, 146, 177);
   background-image: linear-gradient(
     to bottom right,
@@ -42,6 +50,7 @@ body {
     rgb(193, 219, 232)
   );
   color: var(--secondary-color);
+  overflow-x: hidden;
 }
 .heading {
   margin-top: 350px;
@@ -63,6 +72,7 @@ h2 {
 }
 h3 {
   font-size: 34px;
+  font-family: var(--secondary-font);
 }
 p {
   font-size: 19px;
@@ -75,8 +85,8 @@ p {
   color: var(--secondary-color);
 }
 
-footer {
-  margin-top: 30px;
+.under-line {
+  margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,16 +98,18 @@ i {
   margin-top: 20px;
   padding: 15px;
   color: #edf1f3;
+  border-radius: 50%;
 }
 i:hover {
   color: var(--secondary-color);
+  transition: 1s;
 }
 .img-profile {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 3%;
   border-bottom-right-radius: 3%;
-  box-shadow: 0px 4px 20px 5px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 4px 50px 5px rgba(229, 236, 204, 0.784);
 }
 .porfolio-heading,
 .work-heading {
@@ -136,4 +148,44 @@ i:hover {
   transform: scale(1.2);
   border-radius: 40px;
   filter: none;
+  box-shadow: 0px 4px 50px 5px rgba(238, 239, 232, 0.966);
+}
+.minding {
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+.btn-contact {
+  background: rgba(216, 223, 178, 0.396);
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+.btn-contact:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.footer-text {
+  margin-right: 10px;
+  font-size: 28px;
+}
+.clouds {
+  width: 100%;
+  height: 100%;
+  background: transparent
+    url("file:///Users/DandA/Desktop/%E2%80%94Pngtree%E2%80%94white%20cloud%20hd%20transparent%20png_3595695.png")
+    no-repeat;
+  background-size: 1000px 1000px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.5;
+  animation: move-background 150s linear infinite;
+}
+footer {
+  margin-top: 200px;
 }
