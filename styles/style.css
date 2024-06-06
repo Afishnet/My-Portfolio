@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #dce9c0;
+  --secondary-color: #274a68;
+  --box-shadow: 0 5px 10px rgba(234, 233, 233, 0.3);
+  --primary-font: "Gravitas One", serif;
+  --secondary-font: "Cutive Mono", monospace;
+}
+
+body {
+  font-family: var(--secondary-font);
+  height: 8000px;
+  background-color: rgb(102, 146, 177);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(102, 146, 177),
+    rgb(193, 219, 232)
+  );
+  color: var(--secondary-color);
+}
+.heading {
+  margin-top: 350px;
+  margin-bottom: 350px;
+}
+h1 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 700;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+h2 {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+.nav-link {
+  color: #edf1f3;
+  font-family: var(--secondary-font);
+}
+.nav-link:hover {
+  color: var(--secondary-color);
+}
+footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-top: 1px solid #edf1f3;
+  flex: 1;
+}
+i {
+  margin-top: 20px;
+  padding: 15px;
+  color: #edf1f3;
+}
+i:hover {
+  color: var(--secondary-color);
+}
+.img-profile {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+.porfolio-heading,
+.work-heading {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.porfolio-container {
+  margin: 40px 40px 40px 40px;
+}
