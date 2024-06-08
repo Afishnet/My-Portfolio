@@ -3,25 +3,28 @@
     margin-top: 150px;
     margin-bottom: 150px;
   }
-
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-  h3 {
-    font-size: 18px;
-  }
-  p {
-    font-size: 16px;
-  }
-  .about-section {
-    text-align: center;
-    padding: 0;
-  }
 }
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18px;
+}
+p {
+  font-size: 16px;
+}
+.about-section {
+  text-align: center;
+  padding: 0;
+}
+body {
+  background-size: auto 100vh;
+}
+
 @keyframes move-background {
   from {
     -webkit-transform: translate3d(0px, 0px, 0px);
@@ -42,7 +45,7 @@
 
 body {
   font-family: var(--secondary-font);
-  height: auto;
+  height: 100%;
   background-color: rgb(102, 146, 177);
   background-image: linear-gradient(
     to bottom right,
@@ -51,6 +54,9 @@ body {
   );
   color: var(--secondary-color);
   overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .heading {
   margin-top: 350px;
@@ -109,7 +115,6 @@ i:hover {
   border-top-right-radius: 50%;
   border-bottom-left-radius: 3%;
   border-bottom-right-radius: 3%;
-  box-shadow: 0px 4px 50px 5px rgba(229, 236, 204, 0.784);
 }
 .porfolio-heading,
 .work-heading {
@@ -148,7 +153,6 @@ i:hover {
   transform: scale(1.2);
   border-radius: 40px;
   filter: none;
-  box-shadow: 0px 4px 50px 5px rgba(238, 239, 232, 0.966);
 }
 .minding {
   margin-left: 10px;
@@ -188,4 +192,59 @@ i:hover {
 }
 footer {
   margin-top: 200px;
+}
+#contactDetails {
+  display: none;
+  width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.706);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3%;
+}
+.btn-send {
+  background: var(--secondary-color);
+  font-size: 20px;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: 1s;
+}
+.hello-heading h1 {
+  margin-top: 150px;
+  margin-left: 20px;
+  text-align: left;
+}
+.contacts {
+  margin: 300px 20px 300px 20px;
+}
+a {
+  text-decoration: none;
+  color: #edf1f3;
+  transition: 1s;
+  font-size: 23px;
+}
+a:hover {
+  color: var(--primary-color);
+}
+.text-connect {
+  margin-left: 20px;
+  margin-top: 50px;
+}
+.btn-connect {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: var(--secondary-color);
+  transition: 1s;
+}
+
+.btn-connect:hover {
+  color: var(--primary-color);
 }
