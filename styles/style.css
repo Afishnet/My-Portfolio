@@ -305,9 +305,7 @@ i:hover {
 .clouds {
   width: 100%;
   height: 100%;
-  background: transparent
-    url("file:///Users/DandA/Desktop/%E2%80%94Pngtree%E2%80%94white%20cloud%20hd%20transparent%20png_3595695.png")
-    no-repeat;
+  background: transparent src= "images/crochet.png" no-repeat;
   background-size: 1000px 1000px;
   position: absolute;
   top: 0;
